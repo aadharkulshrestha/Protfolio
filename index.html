@@ -191,13 +191,13 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+                <div class="alert" name="alert" id="alert">Your message has been sent</div>
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                    <form action="" class="contact__form" id = "contactForm">
+                        <input type="text" placeholder="Name" class="contact__input" name="name" id = "name">
+                        <input type="mail" placeholder="Email" class="contact__input" name="email" id = "email">
+                        <textarea cols="0" rows="10" class="contact__input" name="question" id="question" placeholder="Your Query"></textarea>
+                        <button type="submit"  class="contact__button button" >Submit</button>
                     </form>
                 </div>
             </section>
@@ -218,6 +218,13 @@
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/scrool.js"></script>
+        
+        <!--=======  FIREBASE  ======-->
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+        
+        
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>

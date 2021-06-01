@@ -356,6 +356,15 @@ img{
 }
 
 /* ===== CONTACT =====*/
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#686de0;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
 .contact__input{
   width: 100%;
   font-size: var(--normal-font-size);
