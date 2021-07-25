@@ -2,11 +2,12 @@
 var firebaseConfig = {
   apiKey: "AIzaSyAPPU4kCZf9oRYRuYy_hFYx6DBwcRLSr4I",
   authDomain: "portfolio-d028c.firebaseapp.com",
+  databaseURL: "https://portfolio-d028c-default-rtdb.firebaseio.com",
   projectId: "portfolio-d028c",
   storageBucket: "portfolio-d028c.appspot.com",
   messagingSenderId: "943977931501",
   appId: "1:943977931501:web:d7cc81c95125772643a2e4",
-  measurementId: "G-4SKWW7XRYS",
+  measurementId: "G-4SKWW7XRYS"
 };
 
 firebase.initializeApp(firebaseConfig);
