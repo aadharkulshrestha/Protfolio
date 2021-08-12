@@ -7,13 +7,15 @@ var firebaseConfig = {
   storageBucket: "portfolio-d028c.appspot.com",
   messagingSenderId: "943977931501",
   appId: "1:943977931501:web:d7cc81c95125772643a2e4",
-  measurementId: "G-4SKWW7XRYS"
+  measurementId: "G-4SKWW7XRYS",
 };
 
 firebase.initializeApp(firebaseConfig);
 
-// Reference messages collection
-var queryRef = firebase.database().ref("Queries");
+const db = firebase.firestore();
+
+// // Reference messages collection
+// var queryRef = firebase.database().ref("Queries");
 
 /* SUBMIT BUTTON */
 document.getElementById("contactForm").addEventListener("submit", submitForm);
@@ -49,10 +51,15 @@ function getInputVal(id) {
 
 // Save message to firebase
 function saveMessage(name, email, question) {
-  var newQueryRef = queryRef.push();
-  newQueryRef.set({
+  db.collection("contact-form").doc().set({
     name: name,
     email: email,
     question: question,
-  });
+  })
+  // var newQueryRef = queryRef.push();
+  // newQueryRef.set({
+  //   name: name,
+  //   email: email,
+  //   question: question,
+  // });
 }
